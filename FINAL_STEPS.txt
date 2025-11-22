@@ -1,0 +1,11 @@
+
+FINAL STEPS — Deploy frontend to Netlify and backend to Firebase (no CLI required)
+
+1. Upload this repository to GitHub (root files in repo root).
+2. Configure Netlify: New Site -> Import from GitHub -> select this repo.
+   - Build command: cd web && npm install && npm run build
+   - Publish directory: web/dist
+3. In Firebase Console enable Firestore, Auth, Functions.
+4. Create Service Account (Project Settings -> Service Accounts) and add its JSON as GitHub secret FIREBASE_SERVICE_ACCOUNT.
+5. In Firebase Console, copy web config and paste into web/src/firebaseConfig.js (use firebaseConfig.example.js as template).
+6. Push to GitHub -> Netlify will build frontend; GitHub Actions will deploy functions.

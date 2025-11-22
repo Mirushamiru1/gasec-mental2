@@ -1,0 +1,15 @@
+{
+  "name": "GASEC Mental Health",
+  "short_name": "GASEC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#6ee7ff",
+  "theme_color": "#7c5cff",
+  "icons": [
+    {
+      "src": "/assets/img/logo-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
